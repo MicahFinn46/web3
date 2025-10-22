@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proxy Browser with Built-in VPN</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <button id="backBtn" title="Back" disabled>&larr;</button>
+    <button id="forwardBtn" title="Forward" disabled>&rarr;</button>
+    <button id="reloadBtn" title="Reload">&#x21bb;</button>
+    <input id="addressBar" type="text" placeholder="Enter URL or search term" />
+    <button id="goBtn">Go</button>
+  </header>
+  <main>
+    <div id="content" tabindex="0">Content will load here...</div>
+  </main>
+
+  <script src="sanitizer.js"></script>
+  <script src="history.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
